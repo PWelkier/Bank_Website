@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona</title>
+    <script src="https://kit.fontawesome.com/9b7fdbc90e.js" crossorigin="anonymous"></script>
+    <style>
+       body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	background-color: #333;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: color 0.6;
+	padding: 20px 5%;
+	z-index: 100;
+	margin: 0 auto;
+    .new_page{
+        position: absolute;
+        left: 30%;
+        border: 2px solid black;
+        background-color: whitesmoke;
+        border-radius: 8px;
+        color: red;
+        padding:10px;
+        text-decoration: none;
+    }
+    .new_page2{
+        position: absolute;
+        left: 40%;
+        border: 2px solid black;
+        background-color: white;
+        border-radius: 8px;
+        color: blue;
+        padding:10px;
+        text-decoration: none;
+    }
+}
+
+.logo {
+	position: relative;
+	font-weight: bold;
+	font-size: 1.2rem;
+	height: 100%;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 0.6;
+	color: #fff;
+}
+
+ul {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style-type: none;
+	padding: 0;
+	margin-right: 200px;
+
+	li {
+		position: relative;
+		margin: 0 15px;
+
+		a {
+			position: relative;
+			text-decoration: none;
+			color: #fff;
+			letter-spacing: 2px;
+			font-weight: 500;
+			transition: 0.6;
+
+			&:hover {
+				color: skyblue;
+			}
+		}
+	}
+}
+
+main {
+	position: relative;
+	font-weight: 200;
+	padding-top: 70px;
+	width: 100%;
+	overflow: hidden;
+	background-image: url('../img/kosmos.jpg');
+
+	.container {
+		margin: 0 5%;
+
+		section {
+			margin: 10px auto;
+			height: 40vh;
+			width: 100%;
+			background-color: rgb(221, 175, 158);
+			border-bottom: 1px solid #ccc;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			overflow-y: auto;
+
+			.aboutus {
+				padding: 30px;
+				display: reltive;
+				.about2 {
+					display: flex;
+					flex-direction: column;
+				}
+			}
+			.create {
+				
+		
+
+				#dynamicList li:not(:first-child) {
+					display: none;
+				}
+			}
+			#kredyty {
+				background-color: rgb(221, 175, 158);
+				padding: 20px;
+				.credits-grid {
+					display: grid;
+					grid-template-columns: repeat(5, 15%);
+					grid-template-rows: 80%;
+					grid-gap: 10px;
+					justify-content: center;
+					align-items: center;
+					height: 70%;
+
+					.credit-item {
+						background-color: rgb(70, 64, 64);
+						color: #ddd;
+						padding: 20px;
+						height: 100%;
+						text-align: center;
+						
+						flex-direction: column;
+						border: 3px solid black;
+						box-shadow: 5px 5px 5px 5px black;
+						span {
+							text-transform: uppercase;
+							text-decoration: underline;
+							text-align: center;
+							padding-bottom: 50px;
+						}
+					}
+				}
+			}
+			#deposit {
+				display: relative;
+                .deposit2{
+                    display: flex;
+
+                }
+				
+			}
+			#location {
+				padding: 5%;
+				background-color: rgb(221, 175, 158);
+				display: flex;
+
+				.location-body {
+					flex-direction: column;
+				}
+			}
+
+			h2 {
+				text-transform: uppercase;
+				text-decoration: underline;
+			}
+			h3 {
+				font-size: 15px;
+			}
+		}
+	}
+}
+	footer {
+        display: absolute;
+        bottom: 0;
+		height: 10vh;
+		width: 100%;
+		background-color: #333;
+		color: #fff;
+		text-align: center;
+		line-height: 10vh;
+	}
+
+ 
+    </style>
+</head>
+
+<body>
+    <header class="sticky">
+        <div class="logo"><i class="fa-solid fa-piggy-bank"></i><span> PRO</span>BANK</div>
+        <a href=""  class="new_page"> Zaloguj</a></button>
+        <a href=""  class="new_page2"> Rejestracja</a></button>
+
+        <div class="menu-icon">☰</div>
+        <ul>
+            <li><a href="#about">O nas</a></li>
+            <li><a href="#create-account">Zakładanie konta</a></li>
+            <li><a href="#credits">Kredyty</a></li>
+            <li><a href="#deposit">Lokaty</a></li>
+            <li><a href="#location">Siedziby</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="container">
+            <section id="about" class="aboutus">
+                <div class="about2">
+                <i class="fa-solid fa-piggy-bank"></i> <p>PROBANK pank powstały .... Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, assumenda.</p>
+                </p>
+                <i class="fa-solid fa-building-flag"> </i>N
+                <p class="lokalizacja"> Nasza głowna siedziba miesci sie na ulicy... Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ratione eligendi distinctio reiciendis tempora magnam iure sequi aut quod? Temporibus!</p>
+                <i class="fa-solid fa-phone"></i>
+                <p> 600 000 000</p>
+            </div>
+            </section>
+            <section id="create-account" clqss="create">
+
+
+                <h2>Jak założyć konto:</h2>
+
+                <div>
+                    <ul id="dynamicList">
+                        <li> Zakładając konto zyskujesz 100zl na START</li>
+                        <li>Kliknij w przycisk Zarejestruj</li>
+                        <li>Wypełnij formularz rejestracyjny </li>
+                        <li>Twoje dane zostały Zarejestrowane, już tylko jeden krok dzieli Cię od zalogowania na Twoje
+                            konto</li>
+                        <li>Wroć na stone głóna i naciśnij przycik zaloguj</li>
+                        <li> Wpisz login i hasło i juz jesteś na Swoim koncie </li>
+                    </ul>
+
+                    <button id="arrowUp">&#8593;</button>
+                    <button id="arrowDown">&#8595;</button>
+                </div>
+
+
+
+
+            </section>
+            <section id="credits">
+                <h2>Kredyty:</h2>
+                <section id="kredyty">
+                    <div class="credits-grid">
+                        <div class="credit-item"><span> Kredyt Hipoteczny</span> <br> <br>Lorem ipsum dolor sit amet.</div>
+                        <div class="credit-item"><span> Kredyt studencki</span> <br> <br>Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Sequi, magni.</div>
+                        <div class="credit-item"><span>Kredyt biznsowy</span> <br> <br>Lorem ipsum dolor sit amet, consectetur
+                            adipisicing.</div>
+                        <div class="credit-item"><span>Superpozyczka</span> <br> <br>Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.</div>
+                        <div class="credit-item"><span>Kredyt na start</span> <br> <br> Lorem ipsum dolor sit amet.</div>
+                    </div>
+                </section>
+
+
+
+            </section>
+            <section id="deposit"> 
+                <h2>Lokaty:</h2>
+                <section id="kredyty">
+                    <div class="credits-grid">
+                        <div class="credit-item"><span> Lokata 3 miesiczna</span> <br> <br>Lorem ipsum dolor sit amet.</div>
+                        <div class="credit-item"><span> Lokata 6 miesiczna</span> <br> <br> Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Sequi, magni.</div>
+                        <div class="credit-item"><span>Lokata 12 miesiczna </span> <br> <br> Lorem ipsum dolor sit amet, consectetur
+                            adipisicing.</div>
+                        <div class="credit-item"><span>Lokata 12 miesiczna z kapitalizacja miesieczna  </span> <br> <br> Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.</div>
+                        <div class="credit-item"><span>Lokata 18 miesiczna z kapitalizacja miesieczna</span> <br> <br> Lorem ipsum dolor sit amet.</div>
+                    </div>
+                </section>
+
+            </section>
+            <section id="location">
+                <div class="c]location-body">
+                    <h2>Siedziby:</h2>
+                    <ol type="I">
+                        <li><h3>Warszawa</h3></li>
+                        <ol type="a">
+                            <li> ulica; nr tel; mail</li>
+                            <li> ulica; nr tel; mail</li>
+                            <li> ulica; nr tel; mail</li>
+                            
+                            
+
+                        </ol>
+                        <li><h3>Wrocław</h3></li>
+                        <ol type="a">
+                            <li> ulica; nr tel; mail</li>
+                            <li> ulica; nr tel; mail</li>
+                            <li> ulica; nr tel; mail</li>
+                           
+                           
+
+                        </ol>
+                        <li><h3>Gdańsk</h3></li>
+                        <ol type="a">
+                            
+                            
+                            <li> ulica; nr tel; mail</li>
+                            <li> ulica; nr tel; mail</li>
+                            <li> ulica; nr tel; mail</li>
+
+                        </ol> 
+                    </ol>
+
+                </div>
+
+            </section>
+    </main>
+    <footer>Footer</footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        
+$(document).ready(function(){
+	let currentPos = 0;
+	const listItems = $('#dynamicList li');
+	const listLength = listItems.length;
+
+	
+	$('#arrowUp').hide();
+
+	
+	listItems.slice(1).hide();
+
+	
+	$('#arrowDown').click(function(){
+		if (currentPos < listLength - 1) {
+			currentPos++;
+			listItems.eq(currentPos).show();
+			$('#arrowUp').show();
+		}
+		if (currentPos === listLength - 1) {
+			$('#arrowDown').hide();
+		}
+	});
+
+	
+	$('#arrowUp').click(function(){
+		if (currentPos > 0) {
+			listItems.eq(currentPos).hide();
+			currentPos--;
+			$('#arrowDown').show();
+		}
+		if (currentPos === 0) {
+			$('#arrowUp').hide();
+		}
+	});
+});
+    </script>
+
+</html>

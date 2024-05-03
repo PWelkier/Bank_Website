@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona</title>
+    <script src="https://kit.fontawesome.com/9b7fdbc90e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header class="sticky">
+        <div class="logo"><i class="fa-solid fa-piggy-bank"></i><span> PRO</span>BANK</div>
+        <a href=""  class="new_page"> Zaloguj</a></button>
+        <a href=""  class="new_page2"> Rejestracja</a></button>
+
+        <div class="menu-icon">☰</div>
+        <ul>
+            <li><a href="#about">O nas</a></li>
+            <li><a href="#create-account">Zakładanie konta</a></li>
+            <li><a href="#credits">Kredyty</a></li>
+            <li><a href="#deposit">Lokaty</a></li>
+            <li><a href="#location">Siedziby</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="container">
+            <section id="about" class="aboutus">
+                <div class="about2">
+                <i class="fa-solid fa-piggy-bank"></i> <p>PROBANK pank powstały .... Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, assumenda.</p>
+                </p>
+                <i class="fa-solid fa-building-flag"> </i>N
+                <p class="lokalizacja"> Nasza głowna siedziba miesci sie na ulicy... Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ratione eligendi distinctio reiciendis tempora magnam iure sequi aut quod? Temporibus!</p>
+                <i class="fa-solid fa-phone"></i>
+                <p> 600 000 000</p>
+            </div>
+            </section>
+            <section id="create-account" clqss="create">
+
+
+                <h2>Jak założyć konto:</h2>
+
+                <div>
+                    <ul id="dynamicList">
+                        <li> Zakładając konto zyskujesz 100zl na START</li>
+                        <li>Kliknij w przycisk Zarejestruj</li>
+                        <li>Wypełnij formularz rejestracyjny </li>
+                        <li>Twoje dane zostały Zarejestrowane, już tylko jeden krok dzieli Cię od zalogowania na Twoje
+                            konto</li>
+                        <li>Wroć na stone głóna i naciśnij przycik zaloguj</li>
+                        <li> Wpisz login i hasło i juz jesteś na Swoim koncie </li>
+                    </ul>
+
+                    <button id="arrowUp">&#8593;</button>
+                    <button id="arrowDown">&#8595;</button>
+                </div>
+
+
+
+
+            </section>
+            <section id="credits">
+                <h2>Kredyty:</h2>
+                <section id="kredyty">
+                    <div class="credits-grid">
+                        <div class="credit-item"><span> Kredyt Hipoteczny</span> <br> <br>Lorem ipsum dolor sit amet.</div>
+                        <div class="credit-item"><span> Kredyt studencki</span> <br> <br>Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Sequi, magni.</div>
+                        <div class="credit-item"><span>Kredyt biznsowy</span> <br> <br>Lorem ipsum dolor sit amet, consectetur
+                            adipisicing.</div>
+                        <div class="credit-item"><span>Superpozyczka</span> <br> <br>Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.</div>
+                        <div class="credit-item"><span>Kredyt na start</span> <br> <br> Lorem ipsum dolor sit amet.</div>
+                    </div>
+                </section>
+
+
+
+            </section>
+            <section id="deposit"> 
+                <h2>Lokaty:</h2>
+                <section id="kredyty">
+                    <div class="credits-grid">
+                        <div class="credit-item"><span> Lokata 3 miesiczna</span> <br> <br>Lorem ipsum dolor sit amet.</div>
+                        <div class="credit-item"><span> Lokata 6 miesiczna</span> <br> <br> Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Sequi, magni.</div>
+                        <div class="credit-item"><span>Lokata 12 miesiczna </span> <br> <br> Lorem ipsum dolor sit amet, consectetur
+                            adipisicing.</div>
+                        <div class="credit-item"><span>Lokata 12 miesiczna z kapitalizacja miesieczna  </span> <br> <br> Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.</div>
+                        <div class="credit-item"><span>Lokata 18 miesiczna z kapitalizacja miesieczna</span> <br> <br> Lorem ipsum dolor sit amet.</div>
+                    </div>
+                </section>
+
+            </section>
+            <section id="location">
+                <div class="c]location-body">
+                    <h2>Siedziby:</h2>
+                    <ol type="I">
+                        <li><h3>Warszawa</h3></li>
+                        <ol type="a">
+                            <li> ulica; nr tel; mail</li>
+                            <li> ulica; nr tel; mail</li>
+                            <li> ulica; nr tel; mail</li>
+                            
+                            
+
+                        </ol>
+                        <li><h3>Wrocław</h3></li>
+                        <ol type="a">
+                            <li> ulica; nr tel; mail</li>
+                            <li> ulica; nr tel; mail</li>
+                            <li> ulica; nr tel; mail</li>
+                           
+                           
+
+                        </ol>
+                        <li><h3>Gdańsk</h3></li>
+                        <ol type="a">
+                            
+                            
+                            <li> ulica; nr tel; mail</li>
+                            <li> ulica; nr tel; mail</li>
+                            <li> ulica; nr tel; mail</li>
+
+                        </ol> 
+                    </ol>
+
+                </div>
+
+            </section>
+    </main>
+    <footer>Footer</footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./javaScript/JsvaScript.js"></script>
+
+</html>
